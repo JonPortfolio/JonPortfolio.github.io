@@ -59,6 +59,7 @@ header nav ul li a  {
     display: block;
     margin: 10px;
     padding: 0 4px;
+    border: 2px solid #1f2531;
     border-radius: 8px;
     text-decoration: none;
     position: relative;
