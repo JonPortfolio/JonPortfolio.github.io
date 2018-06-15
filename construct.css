@@ -91,7 +91,7 @@ main    {
     clear: both;
     background-color: #4869b2;
     color: #fff;
-    border: 5px solid #eeeeee;
+    border: 2px solid #eeeeee;
     border-radius: 1em;
 }
 
@@ -99,8 +99,8 @@ main h2 {
         text-align: center;
         margin: 0 0 20px 0;
         padding: 20px 0;
-        border-top-left-radius: .5em;
-        border-top-right-radius: .5em;
+        border-top-left-radius: .6em;
+        border-top-right-radius: .6em;
         background: linear-gradient(to top, #4869b2 0%, #739fff 100%);
 }
     
