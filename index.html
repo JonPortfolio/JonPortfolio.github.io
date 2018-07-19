@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="construct.css" type="text/css">
     
 <style>
+    
     /* Check vendor prefixes for display?....
     wrapper for flex boxes, assigns containing elements as flex items */
     .flex-container    {
@@ -31,9 +32,13 @@
         -ms-align-items: baseline;
         align-items: baseline;
     }
-    .flex-item img  {
+    .flex-item h3 {
+        font-size: 1.5em;
         text-align: center;
     }
+    .flex-item img  {
+        text-align: center;
+    } 
     /* Embedded links psuedo classes */
     main p a:link  {
         color: #fff;
@@ -95,9 +100,9 @@
     <p>E.G. Construction provides quality work from experienced professionals. The owner has X35X years of experience in construction. Please have a look through our <a href="gallery.html">gallery</a> to see some of our finished products.</p>
     
     <div class="flex-container">
+            
         <div class="flex-item">
             <!-- images -->
-            
             <h3>Residential</h3>
             
             <img src="images/photo1.jpg" alt="photo" width="240" height="140">
@@ -121,8 +126,8 @@
                 <li>New construction</li>
                 <li>Specialized construction needs</li>
             </ul>
-            
         </div>
+    
     </div>
 </main>
     

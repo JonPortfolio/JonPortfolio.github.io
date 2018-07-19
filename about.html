@@ -26,6 +26,37 @@
         margin: 0;
     }
     
+    #mid h4 {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 10px;
+        font-size: 1.25em;
+    }
+    
+    .flex-container    {
+        display: -webkit-flex;
+        display: flex;
+        margin: 20px 0 0 0;
+        width: 100%;
+        height: 280px;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -o-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+    }
+    /* two column display within flex container */
+    .flex-item  {
+        margin: 0 20px;
+        width: 380px;
+        height: 260px;
+        -webkit-align-items: baseline;
+        -moz-align-items: baseline;
+        -o-align-items: baseline;
+        -ms-align-items: baseline;
+        align-items: baseline;
+    }
+    
     #expect {
         padding: 0 0 0 200px;
     }
@@ -54,11 +85,19 @@
             list-style-type: none;
             text-align: center;
         }
+        .flex-container {
+            display: inline-block;
+            text-align: center;
+        }
+        .flex-item  {
+            margin: 0 auto;
+        }
         #expect {
             padding: 0;
             text-align: center;
         }
     }
+    
 </style>
     
 </head>
@@ -101,7 +140,37 @@
     <h2>What We Do</h2>
     
     <div id="mid">
-    <p>The owner's experience allows us to offer a range of construction services. We are dedicated to a personalized experience, which is why we offer 24/7 access to one of our supervisors should you have any questions. We understand that the construction process can seem like a daunting task, and many worry about over-paying. Thus, we offer 100% transparency with our pricing. We walk you through the quote process, step-by-step so you are informed where every last penny is going.</p>
+    
+    <hgroup>
+        <h4>Personalizing the construction experience</h4>
+        <h4>100% transparent pricing</h4>
+        <h4>Side by side quotes</h4>
+    </hgroup>
+    
+    <div class="flex-container">
+        
+    <div class="flex-item">
+    <ul>
+        <li>Construction Services</li>
+            <ul>
+                <li>Framing</li>
+                <li>Drywall / Sheetrock</li>
+                <li>Roofing</li>
+            </ul>
+        <li>Personalized Experience</li>
+        <li>Transparent Pricing</li>
+            <ul>
+                <li>Breakdown of labor and materials</li>
+                <li>Sub-contracting information</li>
+            </ul>
+    </ul>
+    </div>
+    
+    <div class="flex-item">
+    <p>The owner's experience allows us to offer a range of construction services. We are dedicated to a personalized experience, which is why we offer 24/7 access to one of our supervisors should you have any questions. We understand that the construction process can seem like a daunting task, and many worry about over-paying. Thus, we offer 100% transparency with our pricing. We walk you through the quote process, step-by-step so you are informed where every last penny is going.</p>  
+    </div>
+        
+    </div>
         
     </div>
     
