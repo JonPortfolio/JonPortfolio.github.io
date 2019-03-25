@@ -3,95 +3,107 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thermocrete Home Page</title>
+    <title>Thermocrete Services</title>
     <link rel="stylesheet" href="construct.css" type="text/css">
     
 <style>
+
+    main img    {
+        padding-left: 200px;
+    }
     
-    /* Check vendor prefixes for display?....
-    wrapper for flex boxes, assigns containing elements as flex items */
+    #base   {
+        float: right;
+    }
+    
+    #top, #mid  {
+        padding-bottom: 20px;
+    }
+    
+    h4  {
+        text-align: right;
+        padding: 0 200px 0 0;
+        margin: 0;
+    }
+    
+    #mid h4 {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 10px;
+        font-size: 1.25em;
+    }
+    
     .flex-container    {
         display: -webkit-flex;
         display: flex;
+        margin: 20px 0 0 0;
         width: 100%;
-        height: 320px;
-        margin: 0 0 20px 0;
+        height: 280px;
         -webkit-justify-content: center;
         -moz-justify-content: center;
         -o-justify-content: center;
         -ms-justify-content: center;
         justify-content: center;
-        clear: none;
     }
     /* two column display within flex container */
     .flex-item  {
-        margin: 0 40px;
-        width: 245px;
-        height: 300px;
+        margin: 0 20px;
+        width: 380px;
+        height: 260px;
         -webkit-align-items: baseline;
         -moz-align-items: baseline;
         -o-align-items: baseline;
         -ms-align-items: baseline;
         align-items: baseline;
-        clear: none;
     }
-    .flex-item h3 {
-        font-size: 1.5em;
-        text-align: center;
-    }
-    .flex-item img  {
-        text-align: center;
-    } 
-    /* Embedded links psuedo classes */
-    main p a:link  {
-        color: #fff;
-    }
-    main p a:visited    {
-        color:  #fff;
-    }
-    main p a:hover    {
-        color:  rgb(200,0,0);
-    }
-    #expect {
-        padding: 0 0 0 200px;
-    }
-    /* Begin media queries */
-    @media only screen and (max-width: 1024px) {
+    
+        @media only screen and (max-width: 1024px) {
       
     }
     
     @media only screen and (max-width: 768px)   {
-    /* change flow to one collumn: in line, centered */
+        main img {
+            display: none;
+        }
+        #base   {
+            float: none;
+            display: block;
+            text-align: center;
+        }
+        #base h4    {
+            padding: 0;
+            text-align: center;
+        }
+        #base ul    {
+            padding: 0;
+        }
+        #base ul li {
+            list-style-type: none;
+            text-align: center;
+        }
+        #mid {
+            text-align: center;
+        }
         .flex-container {
             display: inline-block;
             text-align: center;
         }
         .flex-item  {
+            padding: 0;
+            border: 0;
             margin: 0 auto;
-        }
-        header h3  {
-            text-align: center;
-            padding: 0;
-            margin: 0;
-        }
-        #expect {
-            padding: 0;
-            text-align: center;
+            width: 220px;
         }
     }
-
-</style>
-    <!--[if lt IE 9]>
-   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   
-<![endif]-->
-</head>
     
+</style>
+    
+</head>
+
 <body>
 <div id="wrapper">
 <header>
-    <img src="images/Banner.jpg" alt="banner" width="">
-    
-    <h1>Thermocrete Chimney Sweeps, LLC</h1>
+    <img src="images/Banner.jpg" alt="banner">
     <!-- navigation -->
     <nav>
         <ul>
@@ -100,72 +112,67 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    
-    <h3>Family owned and operated since 1985</h3>
-    
 </header> 
     
 <main>
-    <!-- Introduction of company and services -->
-    <h2>Welcome</h2>
     
-    <div id="intro">
+    <h2>Where We're From</h2>
+    <div id="top">
+    <div id="base">
+        
+        <h4>We are based out of Ludlow Massachusettes</h4>
+        <h5>Area We Cover</h5>
         <ul>
-            <li>Fully Licensed and Insured</li>
-            <ul>
-                <li>HIC # 191656</li>
-                <li>CSSL # 094627</li>
-            </ul>
-            <li>Estimates done by owner</li>
-            <li>All work done by owner and partner</li>
+            <li>Western MA</li>
+            <li>Any CT?</li>
+            <li>Anywhere else?</li>
         </ul>
+        
     </div>
+    
+    <img src="images/photo1.jpg" alt="" height="250" width="300">
+    
+    </div>
+    
+    <h2>What We Do</h2>
+    
+    <div id="mid">
+    
+    <hgroup>
+        <h4>Personalizing the construction experience</h4>
+        <h4>100% transparent pricing</h4>
+        <h4>Side by side quotes</h4>
+    </hgroup>
     
     <div class="flex-container">
-            
-        <div class="flex-item">
-            <!-- images -->
-            <h3>Residential</h3>
-            
-            <img src="images/photo1.jpg" alt="photo" width="240" height="140">
-            
+        
+    <div class="flex-item">
+    <ul>
+        <li>Construction Services</li>
             <ul>
-                <li>Would you like information here?</li>
-                <li>Maybe brief list of offerings?</li>
-                <li>Then services page could be a details breakdown?</li>
+                <li>Framing</li>
+                <li>Drywall / Sheetrock</li>
+                <li>Roofing</li>
             </ul>
-        </div>
-    
-        <div class="flex-item">
-            <!-- images -->
-            <h3>Commercial</h3>
-            
-            <img src="images/photo1.jpg" alt="photo" width="240" height="140">
-            
+        <li>Personalized Experience</li>
+        <li>Transparent Pricing</li>
             <ul>
-                <li>Place Holder</li>
-                <li>Place Holder</li>
-                <li>Place Holder</li>
+                <li>Breakdown of labor and materials</li>
+                <li>Sub-contracting information</li>
             </ul>
-        </div>
-    
+    </ul>
     </div>
     
-    <h2>What You Can Expect</h2>
-    
-    <div id="bot">
+    <div class="flex-item">
+    <p>The owner's experience allows us to offer a range of construction services. We are dedicated to a personalized experience, which is why we offer 24/7 access to one of our supervisors should you have any questions. We understand that the construction process can seem like a daunting task, and many worry about over-paying. Thus, we offer 100% transparency with our pricing. We walk you through the quote process, step-by-step so you are informed where every last penny is going.</p>  
+    </div>
         
-    <ul id="expect">
-        <li>Transparent price quotes</li>
-        <li>Direct contact with owners</li>
-        <li>Professional work crews</li>
-        <li>Questions and concerns answered and solved in a timely manner</li>
-    </ul>
-    
+    </div>
+        
     </div>
     
 </main>
-    
+
 <footer>
     <!-- footer navigation -->
         <ul>
@@ -173,9 +180,9 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
-</footer>    
+</footer> 
     
-    <!-- BBB Seal -->
+        <!-- BBB Seal -->
     <div class="bbbseal">
     
     <a id="bbblink" class="ruhzbul" href="https://www.bbb.org/us/ma/ludlow/profile/chimney-liners/thermocrete-chimney-sweeps-0261-201346#bbbseal" title="Thermocrete Chimney Sweeps, LLC, Chimney Liners, Ludlow, MA"> <!-- style="display: block;<!--position: relative*/;overflow: hidden; width: 200px; height: 90px; margin: 0px; padding: 0px;" --><img style="padding: 0px; border: none;" id="bbblinkimg" src="https://seal-central-westernma.bbb.org/logo/ruhzbul/thermocrete-chimney-sweeps-201346.png" width="400" height="90" alt="Thermocrete Chimney Sweeps, LLC, Chimney Liners, Ludlow, MA" /></a><script type="text/javascript">
@@ -184,7 +191,7 @@
     
     </div>
     
-</div>   
+</div>
 </body>
-    
+
 </html>

@@ -22,9 +22,9 @@ header h1  {
 }
 
 header h3   {
-    text-align: left;
-    font-style: italic; 
-    padding: 0 0 0 60px;
+    text-align: right;
+    font-style: italic;
+    padding: 0 60px 0 0;
 }
 /* Beginning of navbar: colors, style, alignment, text-shadow, links/pseudo clases */
 header nav  {
@@ -40,7 +40,7 @@ header nav  {
 header nav ul  {
     list-style-type: none;
     padding: 0;
-    width: 38em;
+    width: 29.5em;
     margin: 0 auto;
 }
 
@@ -87,9 +87,10 @@ header nav ul li a:hover {
 header nav ul li a:active {
     top: 3px;
 }
+
 /* Main: colors, borders, alignment... */
 main    {
-    clear: both;
+    clear: none;
     background-color: #4869b2;
     color: #effbff;
     border: 2px solid #eeeeee;
@@ -97,29 +98,62 @@ main    {
 }
 
 main h2 {
-        text-align: center;
-        margin: 0 0 20px 0;
-        padding: 20px 0;
-        border-top-left-radius: .6em;
-        border-top-right-radius: .6em;
-        background: linear-gradient(to top, #4869b2 0%, #739fff 100%);
+    font-size: 3.5em;
+    text-align: center;
+    margin: 0 0 20px 0;
+    padding: 20px 0;
+    border-top-left-radius: .6em;
+    border-top-right-radius: .6em;
+    background: linear-gradient(to top, #4869b2 0%, #739fff 100%);
 }
-    
+
+#intro {
+    font-size: 1.2em;
+    width: 320px;
+    margin: 0 auto;
+}
+
 main p   {
     text-align: center;
     width: 80%;
     margin: 0 auto;  
 }
+
+/* BBB Seal - float in fixed on bottom right. Seal if referencing an external stylesheet from the BBB - need to inspect these styles when making changes */
+
+a #bbblink {
+    display: block;
+    overflow: hidden;
+    width: 200px;
+    height: 90px; 
+    margin: 0px; 
+    padding: 0px;
+}
+
+a#bbblink img {
+    
+}
+
+a #bbblinkimg {
+    
+}
+
+.bbbseal {
+    bottom: 0;
+    right: 20px;
+    position: fixed;
+}
+
 /* Footer: list, inline */
 footer ul   {
     list-style-type: none;
     text-align: center;
     padding: 0;
-    font-size: 90%
+    font-size: 90%;
 }
 
 footer ul li    {
-    display: inline-block;
+    display: inline;
     padding: 0 5px;
 }
 /* links/pseudo classes */
@@ -156,5 +190,15 @@ footer ul li a:hover {
         
         header nav ul  {
             width: auto;
+        }
+        
+        main h2 {
+            font-size: 2em;
+        }
+        
+        .bbbseal {
+            bottom: 0;
+            right: 20px;
+            position: static;
         }
     }
