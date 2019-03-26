@@ -13,12 +13,15 @@ header  {
 }
 
 header img  {
-    width: 80%;
+    width: 10%;
     height: auto;
+    display: inline-block;
 }
 
 header h1  {
-    text-align: center;
+    display: inline-block;
+    font-size: 3em;
+    padding: 0 0 0 10px;
 }
 
 header h3   {
@@ -102,21 +105,39 @@ main h2 {
     text-align: center;
     margin: 0 0 20px 0;
     padding: 20px 0;
-    border-top-left-radius: .6em;
-    border-top-right-radius: .6em;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
     background: linear-gradient(to top, #4869b2 0%, #739fff 100%);
+}
+
+main h3 {
+    text-align: center;
 }
 
 #intro {
     font-size: 1.2em;
-    width: 320px;
-    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center
 }
 
 main p   {
     text-align: center;
     width: 80%;
     margin: 0 auto;  
+}
+
+#welcomeOne {
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-top;
+    text-align: left;
+}
+#welcomeTwo {
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-top;
+    text-align: left;
 }
 
 /* BBB Seal - float in fixed on bottom right. Seal if referencing an external stylesheet from the BBB - need to inspect these styles when making changes */
@@ -135,7 +156,7 @@ a#bbblink img {
 }
 
 a #bbblinkimg {
-    
+    background-color: #fff;
 }
 
 .bbbseal {
