@@ -9,15 +9,35 @@
 <style>
 
     main img    {
-        padding-left: 200px;
+        text-align: center;
     }
     
-    #base   {
+    #left   {
+        width: 28%;
+        float: left;
+        text-align: left;
+    }
+    
+    #right {
+        width: 28%;
         float: right;
+        text-align: left;
     }
     
-    #top, #mid  {
+    #right h4 {
+        padding: 0;
+        text-align: center;
+    }
+    
+    #top {
         padding-bottom: 20px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #mid {
+        padding-bottom: 20px
     }
     
     h4  {
@@ -38,7 +58,7 @@
         display: flex;
         margin: 20px 0 0 0;
         width: 100%;
-        height: 280px;
+        /* height: 280px; */
         -webkit-justify-content: center;
         -moz-justify-content: center;
         -o-justify-content: center;
@@ -49,7 +69,7 @@
     .flex-item  {
         margin: 0 20px;
         width: 380px;
-        height: 260px;
+        /* height: 260px; */
         -webkit-align-items: baseline;
         -moz-align-items: baseline;
         -o-align-items: baseline;
@@ -65,19 +85,19 @@
         main img {
             display: none;
         }
-        #base   {
+        #left   {
             float: none;
             display: block;
             text-align: center;
         }
-        #base h4    {
+        #left h4    {
             padding: 0;
             text-align: center;
         }
-        #base ul    {
+        #left ul    {
             padding: 0;
         }
-        #base ul li {
+        #left ul li {
             list-style-type: none;
             text-align: center;
         }
@@ -111,66 +131,82 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+    <h3>T: (413) 594-8764</h3>
 </header> 
     
 <main>
     
-    <h2>Where We're From</h2>
+    <h2>Services</h2>
     <div id="top">
-    <div id="base">
+    <div id="left">
         
-        <h4>We are based out of Ludlow Massachusettes</h4>
-        <h5>Area We Cover</h5>
+        <h5>Cast in Place and Stainless Steel Liners</h5>
         <ul>
-            <li>Western MA</li>
-            <li>Any CT?</li>
-            <li>Anywhere else?</li>
+            <li>On-site estimates required for liners</li>
+            <li>Call now for your free estimate!</li>
         </ul>
         
+        <h5>Cleanings</h5>
+        <ul>
+            <li>Single Flue - $150</li>
+            <li>"Roto" Clean - $200</li>
+            <li>Each Additional Flue - $100</li>
+        </ul>
+        
+        <h5>Inspections</h5>
+        <ul>
+            <li>Real Estate Inspection - $75</li>
+            <li>Level 2 Inspection - $200</li>
+        </ul>
+        
+        <h5>Rain Caps</h5>
+        <ul>
+            <li>Single Flue 8x8, 8x12 - $110</li>
+            <li>Single Flue 12x12 - $125</li>
+            <li>Multi FLue - $300-$375 (most sizes)</li>
+        </ul>
+        
+        <h5>Chimney Top Damper</h5>
+        <ul>
+            <li>$350</li>
+        </ul>
+        
+        <h5>Masonry Rebuilds / Repairs - On Site Estimate</h5>
+        <h5>Rubber Crown Seal - On Site Estimate</h5>
+        <h5>Chimney Saver Waterproofing - On Site Estimate</h5>
+        
+    </div>
+    <div id="right">
+        
+        <h3>Thermocrete Chimneys Offer Safe, Long-Lasting Results</h3>
+            <ul>
+                <li>THERMOCRETE liner is so durable it will probably outlast the life of your house.</li><br>
+                <li>Reduces safety hazards, ends corrosion damage, insulates flues from combustibles.</li><br>
+                <li>Improves the structural integrity of your chimney.</li><br>
+                <li>Creates the ideal flue shape to give you more efficietn furnace or stove operation, less cresote and condensation</li>
+            </ul>
+        
+        <h4>No Chimney lining can match the long-life efficiencies of a Thermocrete system. Structurally sound it fills cracks and fissures, matches flue diameters to appliance needs.</h4>
+        
     </div>
     
-    <img src="images/photo1.jpg" alt="" height="250" width="300">
+    <img src="images/linerDiagram.jpg" alt="Stainless Steel Liner" width="280" height="560">
     
     </div>
-    
-    <h2>What We Do</h2>
     
     <div id="mid">
-    
-    <hgroup>
-        <h4>Personalizing the construction experience</h4>
-        <h4>100% transparent pricing</h4>
-        <h4>Side by side quotes</h4>
-    </hgroup>
-    
-    <div class="flex-container">
-        
+    <div class="flex-container"> 
     <div class="flex-item">
-    <ul>
-        <li>Construction Services</li>
-            <ul>
-                <li>Framing</li>
-                <li>Drywall / Sheetrock</li>
-                <li>Roofing</li>
-            </ul>
-        <li>Personalized Experience</li>
-        <li>Transparent Pricing</li>
-            <ul>
-                <li>Breakdown of labor and materials</li>
-                <li>Sub-contracting information</li>
-            </ul>
-    </ul>
+    <!-- Place holder incase want to add multi column content -->   
     </div>
-    
     <div class="flex-item">
-    <p>The owner's experience allows us to offer a range of construction services. We are dedicated to a personalized experience, which is why we offer 24/7 access to one of our supervisors should you have any questions. We understand that the construction process can seem like a daunting task, and many worry about over-paying. Thus, we offer 100% transparency with our pricing. We walk you through the quote process, step-by-step so you are informed where every last penny is going.</p>  
-    </div>
-        
-    </div>
-        
+        <!-- Place holder incase want to add multi column content -->
+    </div>  
+    </div> 
     </div>
     
 </main>
@@ -180,6 +216,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
 </footer> 

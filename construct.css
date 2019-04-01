@@ -5,6 +5,7 @@ body    {
 /*Create box inside window*/
 #wrapper    {
     width: 90%;
+    overflow: hidden;
     margin: 0 auto;
 }
 /* Header: contains nav bar */
@@ -43,7 +44,7 @@ header nav  {
 header nav ul  {
     list-style-type: none;
     padding: 0;
-    width: 29.5em;
+    width: 38em;
     margin: 0 auto;
 }
 
