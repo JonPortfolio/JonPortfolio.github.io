@@ -14,8 +14,8 @@ header  {
 }
 
 header img  {
-    width: 10%;
-    height: auto;
+    width: 80%;
+    height: 280px;
     display: inline-block;
 }
 
@@ -112,6 +112,10 @@ main h2 {
 }
 
 main h3 {
+    text-align: center;
+}
+
+main h4 {
     text-align: center;
 }
 
