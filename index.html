@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construction Home Page</title>
+    <meta name="description" content="Thermocrete Chimney Sweeps is a family owned and operated chimney service provider. Among the chimney maintenance services, their lining system is unrivaled in its efficiency, quality, and durability.">
+    <meta name="keywords" content="chimney, flue, chimney repair, chimney liner, chimney sweep near me, chimney caps, chimney clean, chimney cap, chimney ludlow">
+    <title>Thermocrete Home Page</title>
     <link rel="stylesheet" href="construct.css" type="text/css">
     
 <style>
@@ -14,23 +16,27 @@
         display: -webkit-flex;
         display: flex;
         width: 100%;
-        height: 320px;
+        height: 420px;
+        margin: 0 0 20px 0;
         -webkit-justify-content: center;
         -moz-justify-content: center;
         -o-justify-content: center;
         -ms-justify-content: center;
         justify-content: center;
+        
     }
     /* two column display within flex container */
     .flex-item  {
         margin: 0 40px;
-        width: 245px;
+        width: 430px;
         height: 300px;
+        text-align: center;
         -webkit-align-items: baseline;
         -moz-align-items: baseline;
         -o-align-items: baseline;
         -ms-align-items: baseline;
         align-items: baseline;
+        
     }
     .flex-item h3 {
         font-size: 1.5em;
@@ -38,36 +44,59 @@
     }
     .flex-item img  {
         text-align: center;
-    } 
-    /* Embedded links psuedo classes */
-    main p a:link  {
-        color: #fff;
     }
-    main p a:visited    {
-        color:  #fff;
+    .flex-item ul {
+        text-align: left;
+        padding: 0;
     }
-    main p a:hover    {
-        color:  rgb(200,0,0);
+    
+    #expect {
+        padding: 0 0 0 200px;
     }
     /* Begin media queries */
     @media only screen and (max-width: 1024px) {
+        
+        .flex-item {
+            width: 45%;
+            height: auto;
+        }
+        
+        .flex-item img {
+            width: 100%;
+            height: auto;
+        }
       
     }
     
     @media only screen and (max-width: 768px)   {
     /* change flow to one collumn: in line, centered */
-        .flex-container {
-            display: inline-block;
-            text-align: center;
-        }
-        .flex-item  {
-            margin: 0 auto;
-        }
+        
         header h3  {
             text-align: center;
             padding: 0;
             margin: 0;
         }
+        .flex-container {
+            display: block;
+            text-align: center;
+            width: auto;
+            height: auto;
+        }
+        .flex-item  {
+            display: block;
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .flex-item h4 {
+            display: block;
+            width: 95%;
+        }
+        .flex-item img {
+            height: auto;
+            width: 90%;
+        }
+        
     }
 
 </style>
@@ -79,67 +108,81 @@
 <body>
 <div id="wrapper">
 <header>
-    <img src="images/Banner.jpg" alt="banner" width="">
+    <img src="images/banner.jpg" alt="Logo" width="" height="">
     
     <!-- navigation -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
     
-    <h3>We do it right the first time, so there won't be a second time.</h3>
+    <h3>T: 413-589-8626</h3>
+    
 </header> 
     
 <main>
     <!-- Introduction of company and services -->
     <h2>Welcome</h2>
-    <p>E.G. Construction provides quality work from experienced professionals. The owner has X35X years of experience in construction. Please have a look through our <a href="gallery.html">gallery</a> to see some of our finished products.</p>
+    <h3>Based out of Ludlow Massachusetts</h3>
+    <div id="intro">
+        <ul id="welcomeOne">
+            <li>Fully Licensed and Insured</li>
+            <ul>
+                <li>HIC # 191656</li>
+                <li>CSSL # 094627</li>
+            </ul>
+        </ul>
+        <ul id="welcomeTwo">
+            <li>Estimates done by owner</li>
+            <li>All work done by owner and partner</li>
+        </ul>
+    </div>
+    <h3>Family owned and operated since 1985</h3>
+    <h4>The Family</h4>
     
     <div class="flex-container">
             
         <div class="flex-item">
+            
+            <h4>Current Owner, Jon Burek and his father, Peter Burek who founded the company in 1985.</h4>
             <!-- images -->
-            <h3>Residential</h3>
+            <img src="images/cover.jpg" alt="Owner and Father" width="371" height="308">
             
-            <img src="images/photo1.jpg" alt="photo" width="240" height="140">
-            
-            <ul>
-                <li>New Home</li>
-                <li>Renovation</li>
-                <li>Repair</li>
-            </ul>
         </div>
     
         <div class="flex-item">
-            <!-- images -->
-            <h3>Commercial</h3>
             
-            <img src="images/photo1.jpg" alt="photo" width="240" height="140">
-            
-            <ul>
-                <li>Offices</li>
-                <li>Renovation</li>
-                <li>New construction</li>
-                <li>Specialized construction needs</li>
-            </ul>
+            <h4>Jon Burek and the future owner</h4>
+            <img src="images/fatherSon.jpg" alt="Owner and his son" width="427" height="320">
+           
         </div>
-    
+
     </div>
+    
 </main>
     
 <footer>
     <!-- footer navigation -->
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
 </footer>    
+    
+    <!-- BBB Seal -->
+    <div class="bbbseal">
+    
+    <a id="bbblink" class="ruhzbul" href="https://www.bbb.org/us/ma/ludlow/profile/chimney-liners/thermocrete-chimney-sweeps-0261-201346#bbbseal" title="Thermocrete Chimney Sweeps, LLC, Chimney Liners, Ludlow, MA"> <!-- style="display: block;<!--position: relative*/;overflow: hidden; width: 200px; height: 90px; margin: 0px; padding: 0px;" --><img style="padding: 0px; border: none;" id="bbblinkimg" src="https://seal-central-westernma.bbb.org/logo/ruhzbul/thermocrete-chimney-sweeps-201346.png" width="400" height="90" alt="Thermocrete Chimney Sweeps, LLC, Chimney Liners, Ludlow, MA" /></a><script type="text/javascript">
+    var bbbprotocol = ( ("https:" == document.location.protocol) ? "https://" : "http://" ); (function(){var s=document.createElement('script');s.src=bbbprotocol + 'seal-central-westernma.bbb.org' + unescape('%2Flogo%2Fthermocrete-chimney-sweeps-201346.js');s.type='text/javascript';s.async=true;var st=document.getElementsByTagName('script');st=st[st.length-1];var pt=st.parentNode;pt.insertBefore(s,pt.nextSibling);})();
+    </script>
+    
+    </div>
     
 </div>   
 </body>
