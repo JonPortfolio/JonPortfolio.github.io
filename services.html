@@ -99,7 +99,8 @@
             height: auto;
         }
         #top img {
-            float: left;
+            /*float: right;*/
+            /*display: block;*/
         }
         #left   {
             width: 100%;
@@ -122,10 +123,11 @@
         #right {
             width: 50%;
             height: auto;
-            float: right;
+            /*display: block;*/
+            float: left;
         }
         #right ul {
-            list-style-type: none;
+            /*list-style-type: none;*/
             padding: 0;
         }
         #mid {
@@ -135,11 +137,29 @@
             display: inline-block;
             text-align: center;
         }
-        .flex-item  {
+        .flex-item img {
             padding: 0;
             border: 0;
             margin: 0 auto;
-            width: 220px;
+            width: 40%;
+        }
+        .flex-item p {
+            /*float: right;*/
+        }
+        #h3text {
+            width: 50%;
+            height: auto;
+            /*display: block;*/
+            float: left;
+            margin: 0 auto;
+        }
+        #picFlash {
+            width: 50%;
+            height: auto;
+            float: right;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
         }
     }
     
@@ -168,14 +188,13 @@
     
     <h2>Services</h2>
     <div id="top">
-    <div id="left">
+        <div id="left">
         
         <h3>Prices</h3>
         <ul>
             <li>Cleanings - $175</li>
-            <li>Single Flue - $150</li>
-            <li>"Roto" Clean - $200</li>
-            <li>Each Additional Flue - $100</li>
+            <li>"Roto" Clean - $250</li>
+            <li>Each Additional Flue - $125</li>
         </ul>
         <br>
         <br>
@@ -183,52 +202,52 @@
         <h3>Rubber Crown Seal - On Site Estimate</h3>
         <h3>Chimney Saver Waterproofing - On Site Estimate</h3>
         
-    </div>
+        </div>
 
-    <img src="images/rebuild.JPG" alt="Chimney Rebuild">
+        <img src="images/rebuild.JPG" alt="Chimney Rebuild">
 
-    <div id="right">
+        <div id="right">
         
-        <h3>Inspections</h3>
-        <ul>
-            <li>Real Estate Inspection - $75</li>
-        </ul>
-        
-        <h3>Rain Caps</h3>
-        <ul>
-            <li>8x8 or 8x12 Caps - $200</li>
-            <li>12x12 - $225</li>
-            <li>Multi Flue Caps - $450 and up</li>
-        </ul>
-        
-        <h3>Chimney Top Damper</h3>
-        <ul>
-            <li>$600</li>
-        </ul>
-        <!-- 
-            <h3>Thermocrete Chimneys Offer Safe, Long-Lasting Results</h3>
+            <h3>Inspections</h3>
             <ul>
-                <li>THERMOCRETE liner is so durable it will probably outlast the life of your house.</li><br>
-                <li>Reduces safety hazards, ends corrosion damage, insulates flues from combustibles.</li><br>
-                <li>Improves the structural integrity of your chimney.</li><br>
-                <li>Creates the ideal flue shape to give you more efficietn furnace or stove operation, less cresote and condensation</li>
+                <li>Real Estate Inspection - $75</li>
             </ul>
         
-        <h4>No Chimney lining can match the long-life efficiencies of a Thermocrete system. Structurally sound it fills cracks and fissures, matches flue diameters to appliance needs.</h4>
-        -->
+            <h3>Rain Caps</h3>
+            <ul>
+                <li>8x8 or 8x12 Caps - $200</li>
+                <li>12x12 - $225</li>
+                <li>Multi Flue Caps - $450 and up</li>
+            </ul>
+        
+            <h3>Chimney Top Damper</h3>
+            <ul>
+                <li>$600</li>
+            </ul>
+            <!-- 
+                <h3>Thermocrete Chimneys Offer Safe, Long-Lasting Results</h3>
+                <ul>
+                    <li>THERMOCRETE liner is so durable it will probably outlast the life of your house.</li><br>
+                    <li>Reduces safety hazards, ends corrosion damage, insulates flues from combustibles.</li><br>
+                    <li>Improves the structural integrity of your chimney.</li><br>
+                    <li>Creates the ideal flue shape to give you more efficietn furnace or stove operation, less cresote and condensation</li>
+                </ul>
+        
+            <h4>No Chimney lining can match the long-life efficiencies of a Thermocrete system. Structurally sound it fills cracks and fissures, matches flue diameters to appliance needs.</h4>
+            -->
 
-    </div>
+        </div>
     
     </div>
     
     <div id="mid">
     <div class="flex-container">
-    <div class="flex-item">
+    <div class="flex-item" id="picFlash">
     <!-- images -->
             <img src="images/chimneyFlash.jpg" alt="Chimney Flashing Photo" width="220" height="400">
             <p>We install new lead flashing</p> 
     </div>
-    <div class="flex-item">
+    <div class="flex-item" id="h3text">
         <h3>Stainless Steel Liners</h3>
             <h4>Reline your unsafe chimney/fireplace with a flexible light or heavy wall stainless steel liner Today!</h4>
             <ul>
